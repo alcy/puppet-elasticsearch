@@ -1,7 +1,15 @@
 Barebones elasticsearch puppet module that uses hiera & parameterized classes.  
-Written for 2.7.x keeping in mind the hiera autolookup feature in 3.x. 
+Written for 2.7.x keeping in mind the hiera autolookup feature in 3.x.
 
-Sample `data.yaml` - 
+To use, simply `include` 
+
+    node foo { 
+      include elasticsearch
+    }
+
+
+
+Sample `data.yaml` 
     
     ---
     elasticsearch::config::cluster_name:  mycluster
